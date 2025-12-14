@@ -158,7 +158,7 @@ namespace LogGenerator
             {
                 // Odeslání na Ingestion Service (běží defaultně na portu 5000-5200, zkontroluj v konzoli po spuštění)
                 // Změň port podle toho, co ti napíše IngestionService po spuštění (např. http://localhost:5112)
-                string url = "http://localhost:5217/api/ingest"; 
+                string url = "http://ingestion-service/api/ingest"; 
         
                 await HttpClient.PostAsJsonAsync(url, log);
             }

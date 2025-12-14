@@ -38,7 +38,7 @@ public class RabbitMqProducer : IDisposable
     public RabbitMqProducer()
     {
         // Tady předpokládáme, že RabbitMQ běží na localhostu (pro Docker to pak změníme)
-        var factory = new ConnectionFactory { HostName = "localhost" };
+        var factory = new ConnectionFactory { HostName = "rabbitmq" };
         
         try 
         {
