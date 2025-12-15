@@ -32,7 +32,7 @@ graph LR
 
 ## 🚀 Technologies
 
-* **Core**: .NET 8 (C#)
+* **Core**: .NET 10 (C#)
 * **Orchestration**: Docker & Kubernetes
 * **Messaging**: RabbitMQ
 * **Fast Storage**: Redis (for detection logic)
@@ -55,7 +55,7 @@ Before running the project, ensure you have the following installed:
 ### 1. Clone the repository
 
 ```bash
-git clone [https://github.com/Matys134/mini-SIEM.git](https://github.com/Matys134/mini-SIEM.git)
+git clone https://github.com/Matys134/mini-SIEM.git
 cd mini-SIEM
 ```
 
