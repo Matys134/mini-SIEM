@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogGenerator", "LogGenerator\LogGenerator.csproj", "{EEB6087A-FDB2-4418-9902-B9BD1785A977}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IngestionService", "IngestionService\IngestionService.csproj", "{1F848282-70A8-40D2-87F2-A82CD78FE770}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessorService", "ProcessorService\ProcessorService.csproj", "{57781D71-5E6C-4B8D-A755-A7115E865EB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEB6087A-FDB2-4418-9902-B9BD1785A977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB6087A-FDB2-4418-9902-B9BD1785A977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB6087A-FDB2-4418-9902-B9BD1785A977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB6087A-FDB2-4418-9902-B9BD1785A977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F848282-70A8-40D2-87F2-A82CD78FE770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F848282-70A8-40D2-87F2-A82CD78FE770}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F848282-70A8-40D2-87F2-A82CD78FE770}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F848282-70A8-40D2-87F2-A82CD78FE770}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57781D71-5E6C-4B8D-A755-A7115E865EB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57781D71-5E6C-4B8D-A755-A7115E865EB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57781D71-5E6C-4B8D-A755-A7115E865EB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57781D71-5E6C-4B8D-A755-A7115E865EB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

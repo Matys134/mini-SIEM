@@ -1,0 +1,70 @@
+﻿apiVersion: v1
+kind: Service
+metadata:
+  name: ingestion-service
+spec:
+  type: LoadBalancer 
+  ports:
+    - port: 80
+      targetPort: 8080
+  selector:
+    app: ingestion-service
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ingestion-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ingestion-service
+  template:
+    metadata:
+      labels:
+        app: ingestion-service
+    spec:
+      containers:
+        - name: ingestion-service
+          image: siem-ingestion:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: processor-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: processor-service
+  template:
+    metadata:
+      labels:
+        app: processor-service
+    spec:
+      containers:
+        - name: processor-service
+          image: siem-processor:latest 
+          imagePullPolicy: IfNotPresent
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: log-generator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: log-generator
+  template:
+    metadata:
+      labels:
+        app: log-generator
+    spec:
+      containers:
+        - name: log-generator
+          image: siem-generator:latest 
+          imagePullPolicy: IfNotPresent
